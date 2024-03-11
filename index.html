@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <h1>Bookmee</h1>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h4>robert</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquid officia possimus impedit aliquam, ex amet voluptatem deserunt dolorem sequi quae provident doloribus repellat veniam. Nobis voluptates id laboriosam totam.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add book</h2>
+        <form action="">
+            <input type="text" placeholder="BookTitle" id="book-title">
+            <input type="text" placeholder="Auther" id="book-auther">
+            <textarea placeholder="Short Discreption" cols="30" rows="10" id="book-discreption"></textarea>
+        <button id="add-btn">ADD</button>
+        <button id="cancel-btn">CANCEL</button>
+        </form>
+
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"> </script>
+</body>
+</html>
